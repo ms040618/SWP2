@@ -88,10 +88,9 @@ void loop() {
 
   // output the distance to the serial port
   Serial.print("Min:");    Serial.print(_DIST_MIN);
-  Serial.print(",Low:");   Serial.print(_TARGET_LOW);
-  Serial.print(",dist:");  Serial.print(dist_ema);
+  Serial.print(",dist:");  Serial.print(dist_raw);
+  Serial.print(",ema:");   Serial.print(dist_ema);
   Serial.print(",Servo:"); Serial.print(myservo.read());  
-  Serial.print(",High:");  Serial.print(_TARGET_HIGH);
   Serial.print(",Max:");   Serial.print(_DIST_MAX);
   Serial.println("");
  
